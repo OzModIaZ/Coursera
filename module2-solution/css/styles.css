@@ -1,0 +1,147 @@
+*{
+  background: #AAA;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modified Primitive elements */
+
+body{
+  margin-left: 1%;
+}
+
+h3{
+  border: 1px solid black;
+  color: white;
+  float: right;
+  font-family: Comic Sans MS, sans-serif;
+  font-size: 1.25em;
+  margin-top: -1px;
+  margin-right: -1px;
+  text-align: center;
+  width: 25%;
+}
+
+p{
+  background: inherit;
+  clear: both;
+  font-family: Calibri, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 5px 0 0 10px;
+}
+
+/* ID's */
+
+#blockTitle-C {
+  background-color: #EE5555;
+}
+
+#blockTitle-B {
+  background-color: #EE55EE;
+}
+
+#blockTitle-S {
+  background-color: #5555EE;
+}
+
+#chickenBox{
+  background-color: #5B6DCD;
+}
+
+#beefBox{
+  background-color: #1BED66;
+}
+
+#sushiBox{
+  background-color: #DFEF66;
+}
+
+/* Classes */
+
+.MenuBlock    {
+  border: 1px solid black;
+  height: 150px;
+  margin: 1.5% 1.5% 3% 1.5%;
+  overflow: clip;
+}
+
+.MenuTitle{
+  font-family: Georgia, serif;
+  font-size: 1.75em;
+  margin: 30px;
+  position: relative;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.MenuBlock{
+	  margin: 1.5% 1.5% 3% 1.5%; 
+	}
+	
+	#blockTitle-S{
+	  width: 12.5%;
+	}
+	
+	#chickenBox   {
+	  float: left;
+	  width: 46%;
+	}
+	
+	#beefBox   {
+	  float: left;
+	  width: 46%;
+	}
+	
+	#sushiBox{
+	  clear: both;
+	  width: 95%
+	}
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+
+	.MenuBlock{
+	  margin: 1.5% 1% 0 1.5%; 
+	  float: left;
+	  width: 30%;
+	}
+}
+
+
+/*Absurdly narrow device*/
+@media (max-width: 300px) { 
+	.MenuBlock{
+	  width: 47%;
+	}
+	
+	#chickenBox {
+	  clear: both;
+	  width: 97%;
+	  height: 450px;
+	}
+	
+	#beefBox {
+	  clear: both;
+	  width: 97%;
+	  height: 450px;
+	}
+	
+	#sushiBox {
+	  clear: both;
+	  width: 97%;
+	  height: 450px;
+	}
+		
+	h3{
+	  clear: both;
+	  width: 56%;
+	}
+}
